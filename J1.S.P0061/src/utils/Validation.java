@@ -22,8 +22,8 @@ public class Validation {
      */
     public static double getDouble(String msg, double min, double max, String msgOutOfRange, String msgTypeError) {
         double result;
-        System.out.print(msg);
         while (true) {
+            System.out.print(msg);
             try {
                 result = Double.parseDouble(SC.nextLine().trim());
                 if (result >= min && result <= max) {

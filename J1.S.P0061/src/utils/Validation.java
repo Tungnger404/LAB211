@@ -28,9 +28,8 @@ public class Validation {
                 result = Double.parseDouble(SC.nextLine().trim());
                 if (result >= min && result <= max) {
                     return result;
-                } else {
-                    System.out.println(msgOutOfRange);
                 }
+                    System.out.println(msgOutOfRange);
             } catch (NumberFormatException e) {
                 System.err.print(msgTypeError);
             }
